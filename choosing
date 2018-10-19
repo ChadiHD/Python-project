@@ -1,0 +1,27 @@
+print("choose the geometrical shape you want to mesure")
+number1 = int(input("Enter 1 for Cube, Enter 2 for Sphere : "))
+
+if number1==1:
+
+    print("Measure a Cubes's volume and Surface area")
+
+    num1 = int(input("Enter the length of any side of the Cube: "))
+
+
+    surface = 6*(num1*num1)
+    volume = num1*num1*num1
+
+    print("The Cube's Surface area is",surface)
+    print("The Cube's volume is",volume)
+
+if number1==2:
+
+    import math
+    radius = int(input("Enter the radius of your circle: "))
+
+    circumference = 2 * math.pi * radius
+    area = math.pi * (radius ** 2)
+
+    # formatted output
+    print ("The circumference of a circle with radius " , radius, "is:%.2f" \
+            %circumference, "and the area is:%.2f" %area)
